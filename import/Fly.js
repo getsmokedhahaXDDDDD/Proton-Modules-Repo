@@ -2,7 +2,7 @@ load("https://raw.githubusercontent.com/getsmokedhahaXDDDDD/Proton-Modules-Repo/
 load("https://raw.githubusercontent.com/getsmokedhahaXDDDDD/Proton-Modules-Repo/master/Module.js");
 var FlyAddon = Java.extend(Module, {
 	getName: function() {
-		return "FlyAddon";
+		return "Fly";
 	},
 	
   	onEnable: function() {
@@ -23,5 +23,6 @@ var FlyAddon = Java.extend(Module, {
 		if (playerInstance.movementInput.sneak) {
 			playerInstance.motionY = -0.4;	
 		}
+		MotionUtils.setMoveSpeed(this.getDouble());
 	}
 });
