@@ -1,5 +1,5 @@
 load("https://raw.githubusercontent.com/getsmokedhahaXDDDDD/Proton-Modules-Repo/master/import/required.js");
-load("https://raw.githubusercontent.com/getsmokedhahaXDDDDD/Proton-Modules-Repo/master/import/Module.js");
+load("https://raw.githubusercontent.com/getsmokedhahaXDDDDD/Proton-Modules-Repo/master/Module.js");
 var FlyAddon = Java.extend(Module, {
 	getName: function() {
 		return "FlyAddon";
