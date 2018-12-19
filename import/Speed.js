@@ -1,5 +1,5 @@
-load("required.js");
-load("../Test.js");
+load("https://raw.githubusercontent.com/getsmokedhahaXDDDDD/Proton-Modules-Repo/master/import/required.js");
+load("https://raw.githubusercontent.com/getsmokedhahaXDDDDD/Proton-Modules-Repo/master/Module.js");
 var SpeedAddon = Java.extend(Module, {
 	getName: function() {
 		return "SpeedAddon";
