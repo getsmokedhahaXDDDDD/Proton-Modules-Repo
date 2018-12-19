@@ -2,8 +2,11 @@ load("https://raw.githubusercontent.com/getsmokedhahaXDDDDD/Proton-Modules-Repo/
 load("https://raw.githubusercontent.com/getsmokedhahaXDDDDD/Proton-Modules-Repo/master/Module.js");
 var SpeedAddon = Java.extend(Module, {
 	getName: function() {
-		return "SpeedAddon";
+		return "Speed";
 	},
+	JSInit: function() {
+// 		addSetting(new Setting());
+	}
     	onEnable: function() {
 
 	},
