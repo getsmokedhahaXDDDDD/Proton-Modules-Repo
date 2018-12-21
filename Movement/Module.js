@@ -14,4 +14,5 @@ function addSettings(setmgr) {
   list.add('Hypixel');
   fly.addModes(list);
   setmgr.rSetting(new Setting("Speed", fly, 0.493, 0.125, 5.0, false));
+  speed.addModes(list);
 }
