@@ -11,7 +11,6 @@ var List = Java.type('java.util.List');
 var HashMap =  Java.type("java.util.HashMap");
 var File =  Java.type("java.io.File");
 var MotionUtils =  Java.type("CPacket.Despacito.util.SpeedUtils");
-var MoveUtils =  Java.type("CPacket.Despacito.util.SpeedUtils");
 var GameTimerHook =  Java.type("CPacket.Despacito.util.mc.GameTimerHook");
 var Setting = Java.type("ooo.cpacket.lemongui.settings.Setting");
 var settings = Client.setmgr;
@@ -42,4 +41,7 @@ function getBool(m, name) {
 }
 function setTimerSpeed(timerSpeed) {
   GameTimerHook.timerSpeed = timerSpeed;
+}
+function setSpeed(speed) {
+  MotionUtils.setMoveSpeed(speed);
 }
