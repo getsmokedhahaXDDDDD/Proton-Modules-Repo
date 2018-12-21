@@ -8,7 +8,7 @@ var SpeedAddon = Java.extend(Module, {
 		return Category.MOVE;
 	}
 	JSInit: function() {
-// 		addSetting(new Setting());
+		this.addModes("Mode", "Vanilla", "Hypixel", "Mineplex");
 	}
     	onEnable: function() {
 
