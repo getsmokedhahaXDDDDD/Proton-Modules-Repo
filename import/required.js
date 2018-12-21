@@ -31,6 +31,15 @@ function addBool(m, name, booleanROLF) {
 function addModes(m, list) {
   		addSetting(new Setting("Mode", m, list.get(0), list));
 }
+function getDouble(m, name) {
+  return settings.getSettingByName(name, m).getValDouble();
+}
+function getString(m, name) {
+  return settings.getSettingByName(name, m).getValString();
+}
+function getBool(m, name) {
+  return settings.getSettingByName(name, m).getValBoolean();
+}
 function setTimerSpeed(timerSpeed) {
   GameTimerHook.timerSpeed = timerSpeed;
 }
