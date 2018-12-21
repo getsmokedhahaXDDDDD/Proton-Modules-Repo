@@ -26,10 +26,10 @@ function addSetting(setting) {
   settings.rSetting(setting);
 }
 function addBool(m, name, booleanROLF) {
-  		Proton.proton.setmgr.rSetting(new Setting(name, m, booleanROLF));
+  		addSetting(new Setting(name, m, booleanROLF));
 }
 function addModes(m, list) {
-  		Proton.proton.setmgr.rSetting(new Setting("Mode", m, list.get(0).getName(), list));
+  		addSetting(new Setting("Mode", m, list.get(0).getName(), list));
 }
 function setTimerSpeed(timerSpeed) {
   GameTimerHook.timerSpeed = timerSpeed;
