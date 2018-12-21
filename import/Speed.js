@@ -8,9 +8,9 @@ var SpeedAddon = Java.extend(Module, {
 	},
 	JSInit: function() {
 		var list = new ArrayList();
-		list.add('Vanilla');
-		list.add('Velt');
-		list.add('Hypixel');
+		list.add("Vanilla");
+		list.add("Velt");
+		list.add("Hypixel");
 		addModes(this, list);
 		addSetting(new Setting("Speed", this, 0.493, 0.125, 5.0, false));
 	},
