@@ -30,13 +30,13 @@ function addBool(m, name, booleanROLF) {
 function addModes(m, list) {
   		addSetting(new Setting("Mode", m, list.get(0), list));
 }
-function getDouble(name) {
-  return settings.getSettingByName(name).getValDouble();
+function getDouble(mName, name) {
+  return settings.getSettingByName(mName, name).getValDouble();
 }
-function getString(name) {
+function getString(mName, name) {
   return settings.getSettingByName(name).getValString();
 }
-function getBool(name) {
+function getBool(mName, name) {
   return settings.getSettingByName(name).getValBoolean();
 }
 function setTimerSpeed(timerSpeed) {
