@@ -15,9 +15,9 @@ var FlyAddon = Java.extend(Module, {
 		list.add('Vanilla');
 		list.add('Velt');
 		list.add('Hypixel');
-		this.addModes(list);
-		this.addNumberOption("Speed", 0.493, 0.125, 5.0);
-		this.setCategory(Category.MOVE);
+		Java.super(FlyAddon).addModes(list);
+		Java.super(FlyAddon).addNumberOption("Speed", 0.493, 0.125, 5.0);
+		Java.super(FlyAddon).setCategory(Category.MOVE);
 	},
 	move: function(moveEvent) {
 		
