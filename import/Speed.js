@@ -11,7 +11,7 @@ var SpeedAddon = Java.extend(Module, {
 		list.add("Vanilla");
 		list.add("Velt");
 		list.add("Hypixel");
-		addModes(this, list);
+		addModes(SpeedAddon, list);
 		addSetting(new Setting("Speed", this, 0.493, 0.125, 5.0, false));
 	},
     	onEnable: function() {
