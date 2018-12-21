@@ -1,3 +1,4 @@
+loadWithNewGlobal("https://raw.githubusercontent.com/getsmokedhahaXDDDDD/Proton-Modules-Repo/master/import/required.js");
 var FlyAddon = Java.extend(Module, {
 	getName: function() {
 		return "Fly";
