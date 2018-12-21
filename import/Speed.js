@@ -4,6 +4,9 @@ var SpeedAddon = Java.extend(Module, {
 	getName: function() {
 		return "Speed";
 	},
+	getCategory: function() {
+		return Category.MOVE;
+	}
 	JSInit: function() {
 // 		addSetting(new Setting());
 	}
