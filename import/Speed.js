@@ -3,9 +3,16 @@ var SpeedAddon = Java.extend(Module, {
 	getName: function() {
 		return "Speed";
 	},
+	getCategory: function() {
+		return Category.MOVE;
+	},
 	JSInit: function() {
-		Java.super(SpeedAddon).setCategory(Category.MOVE);
-		Java.super(SpeedAddon).addModes("Mode", "Vanilla", "Hypixel", "Mineplex");
+		var list = new ArrayList();
+		list.add('Vanilla');
+		list.add('Velt');
+		list.add('Hypixel');
+		addModes(list);
+		addSetting(new Setting("Speed", this, 0.493, 0.125, 5.0, false));
 	},
     	onEnable: function() {
 
