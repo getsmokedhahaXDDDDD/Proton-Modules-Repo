@@ -27,6 +27,6 @@ var FlyAddon = Java.extend(Module, {
 		if (playerInstance.movementInput.sneak) {
 			playerInstance.motionY = -0.4;	
 		}
-		MotionUtils.setMoveSpeed(this.getDouble("Speed"));
+// 		MotionUtils.setMoveSpeed("Speed"));
 	}
 });
