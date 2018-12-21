@@ -11,6 +11,13 @@ var FlyAddon = Java.extend(Module, {
 	onDisable: function() {
 		
 	},
+	JSInit: function() {
+		this.addModes("Mode", "Vanilla", "Hypixel", "Mineplex");
+		this.addNumberOption("Speed", 0.493, 0.125, 5.0);
+	}
+	getCategory: function() {
+		return Category.MOVE;
+	}
 	move: function(moveEvent) {
 		
 	},
