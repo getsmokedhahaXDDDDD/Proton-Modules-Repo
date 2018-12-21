@@ -29,7 +29,7 @@ function addBool(m, name, booleanROLF) {
   		addSetting(new Setting(name, m, booleanROLF));
 }
 function addModes(m, list) {
-  		addSetting(new Setting("Mode", m, list.get(0).getName(), list));
+  		addSetting(new Setting("Mode", m, list.get(0), list));
 }
 function setTimerSpeed(timerSpeed) {
   GameTimerHook.timerSpeed = timerSpeed;
