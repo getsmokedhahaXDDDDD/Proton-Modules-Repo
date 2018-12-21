@@ -10,7 +10,11 @@ var FlyAddon = Java.extend(Module, {
 		
 	},
 	JSInit: function() {
-		this.addModes("Mode", "Vanilla", "Hypixel", "Mineplex");
+		var list = new ArrayList();
+		list.add('Vanilla');
+		list.add('Velt');
+		list.add('Hypixel');
+		this.addModes(list);
 		this.addNumberOption("Speed", 0.493, 0.125, 5.0);
 		this.setCategory(Category.MOVE);
 	},
@@ -26,6 +30,6 @@ var FlyAddon = Java.extend(Module, {
 		if (playerInstance.movementInput.sneak) {
 			playerInstance.motionY = -0.4;	
 		}
-		MotionUtils.setMoveSpeed(this.getDouble());
+		MotionUtils.setMoveSpeed(this.getDouble("Speed"));
 	}
 });
