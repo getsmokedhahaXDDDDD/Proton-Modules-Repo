@@ -31,6 +31,3 @@ var SpeedAddon = Java.extend(Module, {
 		}
 	}
 });
-function setMoveSpeed(speed) {
-	MotionUtils.setMoveSpeed(speed);
-}
