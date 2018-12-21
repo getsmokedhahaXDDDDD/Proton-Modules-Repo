@@ -28,7 +28,7 @@ function addSetting(setting) {
 function addBool(m, name, booleanROLF) {
   		addSetting(new Setting(name, m, booleanROLF));
 }
-function addModes(m, list) {
+function addModes(m, ArrayList list) {
   		addSetting(new Setting("Mode", m, list.get(0), list));
 }
 function setTimerSpeed(timerSpeed) {
