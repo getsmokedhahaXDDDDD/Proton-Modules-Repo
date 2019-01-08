@@ -7,11 +7,5 @@ function addMods(modules) {
   modules.add(speed);
 }
 function addSettings(setmgr) {
-  var list = new ArrayList();
-  list.add('Vanilla');
-  list.add('Velt');
-  list.add('Hypixel');
-  fly.addModes(list);
-  setmgr.rSetting(new Setting("Speed", fly, 0.493, 0.125, 5.0, false));
-  speed.addModes(list);
+  
 }
