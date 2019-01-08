@@ -2,17 +2,17 @@
 // CLASSES, ETC //
 //////////////////
 
-var Module =  Java.type("CPacket.Despacito.module.Module");
-var Category =  Java.type("CPacket.Despacito.module.Module.Category");
+var Module =  Java.type("me.cpacket.proton.module.Module");
+var Category =  Java.type("me.cpacket.proton.module.Module.Category");
 var Minecraft =  Java.type("net.minecraft.client.Minecraft");
 var Client =  Java.type("CPacket.Despacito.Proton").proton;
+var C03PacketPlayer = Java.type("net.minecraft.network.play.client.C03PacketPlayer");
 var ArrayList =  Java.type("java.util.ArrayList");
 var List = Java.type('java.util.List');
 var HashMap =  Java.type("java.util.HashMap");
 var File =  Java.type("java.io.File");
-var MotionUtils =  Java.type("CPacket.Despacito.util.SpeedUtils");
-var GameTimerHook =  Java.type("CPacket.Despacito.util.mc.GameTimerHook");
-var Setting = Java.type("ooo.cpacket.lemongui.settings.Setting");
+var MotionUtils =  Java.type("me.cpacket.proton.util.SpeedUtils");
+var GameTimerHook =  Java.type("me.cpacket.proton.util.mc.GameTimerHook");
 var settings = Client.setmgr;
 var mc = Minecraft.getMinecraft();
 var playerInstance = Minecraft.getMinecraft().thePlayer;
@@ -20,25 +20,6 @@ var playerInstance = Minecraft.getMinecraft().thePlayer;
 /////////////////////
 // METHODS, ETC... //
 /////////////////////
-
-function addSetting(setting) {
-  settings.rSetting(setting);
-}
-function addBool(m, name, booleanROLF) {
-  		addSetting(new Setting(name, m, booleanROLF));
-}
-function addModes(m, list) {
-  		addSetting(new Setting("Mode", m, list.get(0), list));
-}
-function getDouble(mName, name) {
-  return settings.getSettingByName(mName, name).getValDouble();
-}
-function getString(mName, name) {
-  return settings.getSettingByName(name).getValString();
-}
-function getBool(mName, name) {
-  return settings.getSettingByName(name).getValBoolean();
-}
 function setTimerSpeed(timerSpeed) {
   GameTimerHook.timerSpeed = timerSpeed;
 }
