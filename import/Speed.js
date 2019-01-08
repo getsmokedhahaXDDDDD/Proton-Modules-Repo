@@ -1,7 +1,7 @@
 load("https://raw.githubusercontent.com/getsmokedhahaXDDDDD/Proton-Modules-Repo/master/import/required.js");
 var FlyAddon = Java.extend(Module, {
 	getName: function() {
-		return "Speed";
+		return "VeltRapeXD";
 	},
   onEnable: function() {
 		
@@ -18,9 +18,6 @@ var FlyAddon = Java.extend(Module, {
 		
 	},
 	update: function(motionEvent) {
-		if (playerInstance.onGround && playerInstance.isMoving()) {
-        playerInstance.motionY = 0.42;
-		}
-		MotionUtils.setMoveSpeed(0.4255);
+		mc.thePlayer.sendQueue.addToSendQueue(new C03PacketPlayer.C04PacketPlayerPosition(mc.thePlayer.posX, mc.thePlayer.posY + 0.425, mc.thePlayer.posZ, true));
 	}
 });
